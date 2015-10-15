@@ -24,13 +24,12 @@ function attackDragon(assistVal){
 	// Add a button... "Run Away"
 	// if clicked on add a message to #message
 
-	var yourRollElement = document.getElementById("your-roll");
 
 	var totalRoll = randomDie1 + randomDie2;
 	var totalAttack = totalRoll + assistVal;
 	var newMessage = "";
 
-	yourRollElement.innerHTML = "You rolled: " + totalRoll + ". Total attack was: " + totalAttack;
+	document.getElementById("your-roll").innerHTML = "You rolled: " + totalRoll + ". Total attack was: " + totalAttack;
 
 	if(totalAttack > 9){
 		newMessage = "You killed the dragon!";
@@ -43,9 +42,9 @@ function attackDragon(assistVal){
 }
 
 function runAway(){
-	var yourRollElement = document.getElementById("your-roll");
-
-	yourRollElement.innerHTML = "";
+	
+	document.getElementById("your-roll").innerHTML = "";
+	
 	displayMessage("You tried to run away but were burnanated!");
 
 }
