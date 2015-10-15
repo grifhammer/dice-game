@@ -35,7 +35,7 @@ function attackDragon(assistVal){
 		newMessage = "You killed the dragon!";
 		displayMessage(newMessage);
 	}else{
-		newMessage = "You were burnanated by the dragon!";
+		newMessage = "You were burninated by the dragon!";
 		displayMessage(newMessage);
 	}
 
@@ -45,7 +45,7 @@ function runAway(){
 	
 	document.getElementById("your-roll").innerHTML = "";
 	
-	displayMessage("You tried to run away but were burnanated!");
+	displayMessage("You tried to run away but were burninated!");
 
 }
 
