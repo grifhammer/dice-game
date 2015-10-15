@@ -3,16 +3,24 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<title>Dragon Dice</title>
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src='script.js'></script>
 </head>
 <body>
-	<div>
+	<div id="the-fight" style="text-align: center;">
+		<img src="dragon.png">
+		<div id="dragon" style="font-size: 30px;">You have encountered a dragon. Do you want to attack?</div>
 		<img src="d1.gif" name="myDie1">
-		<img src="d1.gif" name="myDie2">
-	</div>
-	<input type="button" value="Throw the Dice!" onclick="throwDice();">
+		<img src="d1.gif" name="myDie2">		
+	
+		<div id="message" style="font-size: 20px; margin-top: 20px;"> You must roll higher than a 9, to defeat the dragon.</div>
 
+		<input type="button" value="Fight!" onclick="attackDragon(0)">
+		<input type="button" value="Run Away!" onclick="runAway()">
+		<input type="button" value="Call Ally!" title="+4 to roll" onclick="attackDragon(4)">
+
+		<div id="your-roll"></div>
+	</div>
 </body>
 </html>
